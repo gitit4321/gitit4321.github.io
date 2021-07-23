@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+      integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
+      crossorigin="anonymous"
+    />
+    <title>JS Drum Kit</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./drumkit.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <!-- Code modeled after FreeCodeCamp.com's navbar javascript tutorial -->
+    <nav class="navbar">
+      <div class="navbar__header">
+        <div class="navbar-header-text">
+          <div class="h1-div">
+            <h1><a href="./index.html">Paul Owen</a></h1>
+          </div>
+          <div class="h2-div">
+            <h2>Percussionist | Drummer | Educator</h2>
+          </div>
+        </div>
+        <div class="navbar__btn">
+          <div class="bar bar1"></div>
+          <div class="bar bar2"></div>
+          <div class="bar bar3"></div>
+        </div>
+      </div>
+      <ul class="navbar__links">
+        <li>
+          <a href="../index.html" class="navbar__single-link">
+            <i class="fas fa-home"></i> Home
+          </a>
+        </li>
+        <li>
+          <a href="../about.html" class="navbar__single-link">
+            <i class="fas fa-search"></i> About
+          </a>
+        </li>
+        <li>
+          <a href="../events.html" class="navbar__single-link">
+            <i class="fas fa-calendar-alt"></i> Events
+          </a>
+        </li>
+        <li>
+          <a href="../media.html" class="navbar__single-link">
+            <i class="fas fa-headphones-alt"></i> Media
+          </a>
+        </li>
+        <li>
+          <a href="../contact.html" class="navbar__single-link">
+            <i class="fas fa-id-card"></i> Contact
+          </a>
+        </li>
+        <li>
+          <a href="./drum_kit/drumkit.html" class="navbar__single-link">
+            <i class="fas fa-drum"></i> Virtual Drum Kit
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Drum Kit -->
+    <!-- Code from Wes Bos' online Javascript30 Course -->
+    <div class="keys">
+      <div data-key="65" class="key">
+        <kbd>A</kbd>
+        <span class="sound">clap</span>
+      </div>
+      <div data-key="83" class="key">
+        <kbd>S</kbd>
+        <span class="sound">hihat</span>
+      </div>
+      <div data-key="68" class="key">
+        <kbd>D</kbd>
+        <span class="sound">kick</span>
+      </div>
+      <div data-key="70" class="key">
+        <kbd>F</kbd>
+        <span class="sound">openhat</span>
+      </div>
+      <div data-key="71" class="key">
+        <kbd>G</kbd>
+        <span class="sound">boom</span>
+      </div>
+      <div data-key="72" class="key">
+        <kbd>H</kbd>
+        <span class="sound">ride</span>
+      </div>
+      <div data-key="74" class="key">
+        <kbd>J</kbd>
+        <span class="sound">snare</span>
+      </div>
+      <div data-key="75" class="key">
+        <kbd>K</kbd>
+        <span class="sound">tom</span>
+      </div>
+      <div data-key="76" class="key">
+        <kbd>L</kbd>
+        <span class="sound">clave</span>
+      </div>
+    </div>
+
+    <audio data-key="65" src="sounds/clap.wav"></audio>
+    <audio data-key="83" src="sounds/hihat.wav"></audio>
+    <audio data-key="68" src="sounds/kick.wav"></audio>
+    <audio data-key="70" src="sounds/openhat.wav"></audio>
+    <audio data-key="71" src="sounds/boom.wav"></audio>
+    <audio data-key="72" src="sounds/ride.wav"></audio>
+    <audio data-key="74" src="sounds/snare.wav"></audio>
+    <audio data-key="75" src="sounds/tom.wav"></audio>
+    <audio data-key="76" src="sounds/tink.wav"></audio>
+    <script src="./drumkit.js"></script>
+  </body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+      integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Paul Owen Percussionist/Drummer/Educator</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <!-- Code modeled after FreeCodeCamp.com's navbar javascript tutorial -->
+    <nav class="navbar">
+      <div class="navbar__header">
+        <div class="navbar-header-text">
+          <div class="h1-div">
+            <h1><a href="./index.html">Paul Owen</a></h1>
+          </div>
+          <div class="h2-div">
+            <h2>Percussionist | Drummer | Educator</h2>
+          </div>
+        </div>
+        <div class="navbar__btn">
+          <div class="bar bar1"></div>
+          <div class="bar bar2"></div>
+          <div class="bar bar3"></div>
+        </div>
+      </div>
+      <ul class="navbar__links">
+        <li>
+          <a href="./index.html" class="navbar__single-link">
+            <i class="fas fa-home"></i> Home
+          </a>
+        </li>
+        <li>
+          <a href="./about.html" class="navbar__single-link">
+            <i class="fas fa-search"></i> About
+          </a>
+        </li>
+        <li>
+          <a href="./events.html" class="navbar__single-link">
+            <i class="fas fa-calendar-alt"></i> Events
+          </a>
+        </li>
+        <li>
+          <a href="./media.html" class="navbar__single-link">
+            <i class="fas fa-headphones-alt"></i> Media
+          </a>
+        </li>
+        <li>
+          <a href="./contact.html" class="navbar__single-link">
+            <i class="fas fa-id-card"></i> Contact
+          </a>
+        </li>
+        <li>
+          <a href="./drum_kit/drumkit.html" class="navbar__single-link">
+            <i class="fas fa-drum"></i> Virtual Drum Kit
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <div class="main-container">
+        <div class="content-container">
+          <h3>Contact</h3>
+          <p>
+            Please contact me for more information regarding performances and
+            private lesson instruction.
+          </p>
+          <!-- This form was used only for test purposes and still need to be paired to a server/database for usable email functionality -->
+          <!-- <form
+            action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php"
+            method="POST"
+          > -->
+          <form action="" method=''>
+            <div class="form-field">
+              <input type="text" name="name" id="name" />
+              <label for="name">Name</label>
+            </div>
+            <div class="form-field">
+              <input type="email" name="email" id="email" />
+              <label for="email">Email</label>
+            </div>
+            <div class="form-field">
+              <input type="text" name="subject" id="subject" />
+              <label for="subject">Subject</label>
+            </div>
+            <div class="form-field">
+              <textarea name="text-area" id="text-area" cols="30" rows="10" placeholder="Enter your message here."></textarea
+              >
+            </div>
+            <div class="form-field">
+              <button type="submit" id="submit-btn">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <script src="./script.js" async defer></script>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+      integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Paul Owen Percussionist/Drummer</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <!-- Code modeled after FreeCodeCamp.com's navbar javascript tutorial -->
+    <nav class="navbar">
+      <div class="navbar__header">
+        <div class="navbar-header-text">
+          <div class="h1-div">
+            <h1><a href="./index.html">Paul Owen</a></h1>
+          </div>
+          <div class="h2-div">
+            <h2>Percussionist | Drummer | Educator</h2>
+          </div>
+        </div>
+        <div class="navbar__btn">
+          <div class="bar bar1"></div>
+          <div class="bar bar2"></div>
+          <div class="bar bar3"></div>
+        </div>
+      </div>
+      <ul class="navbar__links">
+        <li>
+          <a href="./index.html" class="navbar__single-link">
+            <i class="fas fa-home"></i> Home
+          </a>
+        </li>
+        <li>
+          <a href="./about.html" class="navbar__single-link">
+            <i class="fas fa-search"></i> About
+          </a>
+        </li>
+        <li>
+          <a href="./events.html" class="navbar__single-link">
+            <i class="fas fa-calendar-alt"></i> Events
+          </a>
+        </li>
+        <li>
+          <a href="./media.html" class="navbar__single-link">
+            <i class="fas fa-headphones-alt"></i> Media
+          </a>
+        </li>
+        <li>
+          <a href="./contact.html" class="navbar__single-link">
+            <i class="fas fa-id-card"></i> Contact
+          </a>
+        </li>
+        <li>
+          <a href="./drum_kit/drumkit.html" class="navbar__single-link">
+            <i class="fas fa-drum"></i> Virtual Drum Kit
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <div class="main-container">
+        <div class="content-container">
+          <!-- Photo slide-show; Code modeled after romeojeremiah's github "javascript for beginners"-->
+          <div class="slides-container">
+            <div class="slides">
+              <a class="btn btn-left"><i class="fas fa-caret-left"></i></a>
+              <a class="btn btn-right"><i class="fas fa-caret-right"></i></a>
+            </div>
+          </div>
+          <div class="new-content-container">
+            <!-- New Video Release Section -->
+            <h3>New Video Release</h3>
+            <div class="vid-container">
+              <iframe
+                width="8400"
+                height="630"
+                src="https://www.youtube.com/embed/OUEPcLMcHvs"
+                frameborder="0"
+              ></iframe>
+            </div>
+            <cite>
+              Mendel Lee's "The Spaces Between"<br /><br />
+              Recorded April 2021, at Revolution Hall, Portland, Oregon
+              <br /><br />
+              Video Direction and Production: Andrew Wallner/Story to Spectacle
+              <br />
+              Audio Engineering and Mixing: Jason Powers <br />
+              Facilities Assistance: Sage Collette <br /><br />
+              Performers: <br />
+              Terry Longshore <br />
+              Paul Owen <br />
+              Chris Whyte <br />
+              Brett Paschal
+            </cite>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./script.js" async defer></script>
+    <script src="./slideshow.js"></script>
+  </body>
+</html>

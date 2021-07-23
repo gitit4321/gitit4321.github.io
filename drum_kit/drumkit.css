@@ -1,0 +1,181 @@
+/* General  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'M PLUS 1p', sans-serif;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: 300;
+  color: #8b472a
+}
+
+h1 a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: 100;
+  color: #8b472a;
+}
+
+h3 {
+  font-size: 40px;  
+  font-weight: 300;
+  color: #8b472a;
+  border-bottom: solid 1px #8b472a;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-size: 32px;  
+  font-weight: 300;
+  color: #8b472a;
+  margin-bottom: 20px;
+}
+
+h5 {
+  font-size: 20px;  
+  font-weight: 300;
+  color: #8b472a;
+}
+
+a {
+  color: #8b472a;
+}
+
+cite {
+  color: #8f6f63;
+  font-weight: 300;
+}
+
+/* nav-bar */
+/* Code modeled after FreeCodeCamp.com's javascript tutorial */
+
+.navbar__header {
+  background: #1b2932;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  border-bottom: 0.3rem solid #8b472a;
+}
+
+.h2-div {
+  align-items: center;
+}
+
+.navbar__btn {
+  border: 5px solid #8b472a;
+  align-self: center;
+  cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 30px;
+  height: 5px;
+  margin: 0.5rem;
+  background: #8b472a;
+  transition: all 2s ease;
+}
+
+.change .bar1 {
+  transform: rotate(-45deg) translate(-10px, 10px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: rotate(45deg) translate(-7px, -8px);
+}
+
+.navbar__links {
+  list-style-type: none;
+  transition: all 2s ease;
+  height: 0;
+  overflow: hidden;
+}
+
+.navbar__collapse {
+  height: 360px;
+}
+
+.navbar__single-link {
+  display: block;
+  background: #798a8a;
+  padding: 1rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #8b472a;
+  transition: all 1s ease;
+  cursor: pointer;
+}
+
+.navbar__single-link:hover {
+  padding-left: 1.5rem;
+  background: #1b2932;
+}
+
+
+/* Drum Kit */
+
+.keys {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  min-height: calc(100vh - 91.8px);
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  border-top: 0.2rem solid #8b472a;
+  background: url("../resources/images/background.jpeg"),
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.key {
+  border: 0.4rem solid black;
+  border-radius: 0.5rem;
+  margin: .5rem;
+  font-size: 0.8rem;
+  padding: 0.5rem 0.5rem;
+  transition: all 0.07s ease;
+  width: 8rem;
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  text-shadow: 0 0 0.5rem black;
+  flex-basis: 8rem;
+  flex-shrink: 1;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #c66840;
+  box-shadow: 0 0 1rem #c66840;
+}
+
+kbd {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-size: 4rem;
+}
+
+.sound {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #c66840;
+}
